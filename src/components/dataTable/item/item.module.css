@@ -1,0 +1,37 @@
+.container  {
+    border: 1px solid #a3a3a3;
+    padding: 3px 10px;
+    display: flex;
+}
+
+.data_timestamp, .data_raw {
+    text-align: left;
+}
+
+.data_timestamp {
+    width: 30%;
+}
+
+.header {
+    color: #a3a3a3;
+}
+
+@media only screen and (max-width: 1000px) {
+    .data_timestamp {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container  {
+        flex-direction: column;
+    }
+
+    .data_timestamp, .data_raw {
+        font-size: 70%;
+    }
+
+    .data_timestamp {
+        width: 100%;
+    }
+}

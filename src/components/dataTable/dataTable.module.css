@@ -1,0 +1,22 @@
+.container  {
+    margin: 10px 10px 0 10px;
+    width: calc(100vw - 200px);
+    height: calc(100vh - 51px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+  
+.container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container  {
+        width: calc(100vw - 130px);
+    }
+}

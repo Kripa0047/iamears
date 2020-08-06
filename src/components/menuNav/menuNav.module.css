@@ -1,0 +1,42 @@
+.container  {
+    width: 200px;
+    background-color: #d6d6d6;
+    margin-right: 10px;
+    overflow: auto;
+    height: calc(100vh - 41px);
+    border-right: 1px solid #747474;
+    box-sizing: border-box;
+    min-width: 130px;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+  
+.container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.item   {
+    border-bottom: 1px solid #747474;
+    padding: 10px 5px;
+    font-size: 110%;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.item:hover {
+    background-color: #b6b6b6;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container  {
+        width: 130px;
+    }
+
+    .item   {
+        font-size: 90%;
+    }
+}
