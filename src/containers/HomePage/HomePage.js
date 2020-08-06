@@ -42,9 +42,7 @@ class HomePage extends Component {
         this.setState({
             selectedTabs
         }, () => {
-            if (!isPresent) {
-                root.onTabHandler(index);
-            }
+            root.onTabHandler(index);
         });
     }
 
